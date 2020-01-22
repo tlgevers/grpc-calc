@@ -1,0 +1,20 @@
+syntax = "proto3";
+
+option java_multiple_files = true;
+option java_package = "io.grpc.calc";
+option java_outer_classname = "CalcProto";
+
+package calc;
+
+service Calc {
+  rpc Sum(Req) returns (Res) {}
+}
+
+message Req {
+  int32 argA = 1;
+  int32 argB = 2;
+}
+
+message Res {
+  int32 result = 1;
+}
