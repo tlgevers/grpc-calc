@@ -3,7 +3,7 @@ package main
 import (
     "fmt"
     "google.golang.org/grpc"
-    pb "pkg/calc/calc"
+    pb "github.com/tlgevers/grpc-calc"
     "context"
     "log"
     "net"
